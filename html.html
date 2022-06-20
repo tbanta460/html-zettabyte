@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Test</title>
+	<style>
+		body, *{
+			padding: 0;
+			margin: 0;
+		}
+		.container{
+			width: 50%;
+			margin: auto;
+			box-shadow: 2px 2px 10px rgb(0,0,0, 0.5);
+		}
+		/*status*/
+		.stts p {
+			margin: 15px 0;
+		}
+		.status{
+			padding: 20px;
+		}
+		.ppl{
+			display: flex;
+			flex-direction: row;
+			grid-column-gap: 20px;
+		}
+		.wrp-profile{
+			display: flex;
+			flex-direction: column;
+		}
+		.wrp-profile span{
+			color: gray;
+			margin: 0 0 0 4px;
+		}
+		.ft-profile, .ant-prf, .my-prof{
+			width: 40px;
+			height: 40px;
+			border-radius: 100%;
+		}
+
+		.gmb-post{
+			width: 100%;
+
+		}
+
+		/*icon like dan share*/
+		.icon{
+			display: flex;
+			flex-direction: row;
+			grid-column-gap: 14px;
+			margin: 20px 0;
+		}
+		.wrap-icon, .txt-kcl{
+			display: flex;
+			flex-direction: row;
+			grid-column-gap: 5px;
+			align-items: center;
+		}
+
+		.icon-post{
+			width: 25px;
+			height: 25px;
+		}
+
+
+		/*komentar*/
+		.wrap-com{
+			background: #ECE8E8;
+			padding: 20px;
+		}
+		.cmt-text{
+			color:  gray;
+		}
+		.cmt-text .jml{
+			color: black;
+			margin-right: 10px;
+		}
+		.ant-accnt{
+			display: flex;
+			flex-direction: row;
+		}
+		
+
+
+			/*Arrow*/
+		.arrow {
+		  border: solid gray;
+		  border-width: 0 3px 3px 0;
+		  display: inline-block;
+		  padding: 3px;
+		}
+		.down {
+		  transform: rotate(45deg);
+		  -webkit-transform: rotate(45deg);
+		}
+		.wrp-cmt{
+			display: flex;
+			flex-direction: row;
+			grid-column-gap: 5px;
+			margin-bottom: 15px;
+		}
+		.txt-kcl{
+			margin-top: 8px;
+		}
+		.txt-kcl .rply{
+			color: #3FBEDD;
+		}
+		.ant-cmt{
+			margin-left: 20px;
+		}
+		.tgl{
+			color: gray;
+			transparent: 0.5;
+			font-size: 13px;
+		}
+
+		/*My com*/
+		.fi-cmt{
+			display: flex;
+			flex-direction: row;
+			grid-column-gap: 10px;
+			margin-top: 30px;
+		}
+		.wrap-text-com{
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+
+		}
+		.wrap-text-com button{
+			width: max-content;
+			padding: 8px 15px;
+			outline: none;
+			background: #3FBEDD;
+			border: none;
+			border-radius: 5px;
+			color: white;
+			margin: 20px 0;
+		}
+		/*pointer*/
+		button, .like,.share,.rply{
+			cursor: pointer;
+		}
+
+		/*dosst*/
+		
+		 .dots{
+		 	    width: 30px;
+			    align-self: center;
+			    justify-self: end;
+			    height: 30px;
+			    margin-left: 200px;
+			    cursor: pointer;
+			 }
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="chd">
+			<section>
+				<div class="status">
+					<div class="ppl">
+						<img src="./profile.jpg" alt="profile" class="ft-profile"/>
+						<div class="wrp-profile">
+							<h3>Ananda Rudianti<Span>posted on your timeline</Span></h3>
+							<span>23 minutes ago</span>
+						</div>
+						<img src="./dots.png" alt="dots" class="dots"/>
+					</div>
+					<div class="stts">
+						<p>Remember the place we were talking about the other night? found it</p>
+						<img src="./aurora.jpg" alt="gambar post" class="gmb-post"/>
+					</div>
+					<div class="icon">
+						<div class="like wrap-icon">
+							<img src="./like.png" alt="icon like" class="like-icon icon-post"/>
+							<span class="text-like text-post">Suka (9)</span>
+						</div>
+						<div class="share wrap-icon">
+							<img src="./share.png" alt="icon share" class="share-icon icon-post"/>
+							<span class="text-share text-post">Share (21)</span>
+						</div>
+					</div>
+				</div>
+				<div class="wrap-com">
+					<div class="wrp-cmt">
+						<h4 class="cmt-text"><span class="jml">1</span>Commentar</h4>
+						<div class="arrow-wrap">
+							<div class="arrow down"></div>
+						</div>
+					</div>
+					<div class="ant-accnt">
+						<img src="./prof-com.jpg" alt="profile komentar" class="ant-prf"/>
+						<div class="ant-cmt">
+							<h3>Putri Andiani <span class="tgl">June 18, 2018</span></h3>
+							<p class="text-com">Ini adalah tempat yang indah untuk dikunjungi, aku berharpa juga bisa pergi ke sana untuk menikmati keindahannya.</p>
+							<div class="txt-kcl">
+								<span class="rply">Reply</span>
+								<img src="./flag.png" class="flag-icon icon-post" alt="icon flag" />
+							</div>
+						</div>
+					</div>
+					<div class="fi-cmt">
+						<img class="my-prof" src="./prof.jpg" alt="my pfoiel"/>
+						<div class="wrap-text-com">
+							<textarea placeholder="Add a Comment"rows="8px"></textarea>
+							<button>Post Comment</button>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
+	<script type="text/javascript">
+		const source = [
+		    {
+		      id: "1",
+		      data: {
+		          first_name: "Rian",
+		          last_name: "Nugraha"
+		      },
+		      school: {
+		        id: "1",
+		        data: "PLMK-JKT"
+		      },
+		    },
+		    {
+		      id: "2",
+		      full_name: "Ari Santoso",
+		      school: {
+		        id: "1",
+		        short_name: "GRSR",
+		        data: "JKT"
+		      },
+		    },
+		    {
+		      id: "3",
+		      data: {
+		        first_name: "Rahman",
+		        last_name: "Sunggara"
+		    },
+		    school: {
+		        id: "1",
+		        short_name: "GELM",
+		        data: "JKT"
+		      },
+		    },
+		    {
+		        id: "4",
+		        data: {
+		            first_name: "Rian",
+		            last_name: "Nugraha"
+		        },
+		        school: {
+		            id: "2",
+		            data: "PLMK-BDG"
+		        },
+		    },
+		  ]
+
+		function result(num) {
+		  let res = [];
+		  let count = 0
+		  num.forEach(data => {
+		  	count = 0
+		  	let newObj = {}
+		  	if(res.length === 0){
+		  		newObj["name"] = data.data.first_name + " " + data.data.last_name
+		  		newObj["school-name"] = data.school.data
+		  		res.push(newObj);
+		  	}else{
+		  		if(data.full_name !== undefined && data.full_name !== null){
+					newObj["name"] = data.full_name
+					newObj["school_name"] = data.school.short_name + " " + data.school.data
+				}else {
+					if(data.school.short_name !== undefined && data.school.short_name !== null){
+					  	newObj["name"] = data.data.first_name + " " + data.data.last_name
+					  	newObj["school_name"] = data.school.short_name + " " + data.school.data
+					}else{
+					  	newObj["name"] = data.data.first_name + " " + data.data.last_name
+					  	newObj["school_name"] = data.school.data
+					 }
+				}
+				for(let i = 0; i < res.length ; i ++){
+					if(res[count].name !== newObj.name){
+						if(res.length - 1 === count){
+							res.push(newObj)
+							count = 0
+						
+						}else{
+							count++
+						}
+					}
+				}
+		  	}
+
+		  	
+		  	
+		  })
+		  
+		  return res
+		}
+
+	
+
+console.log(result(source));
+	</script>
+</body>
